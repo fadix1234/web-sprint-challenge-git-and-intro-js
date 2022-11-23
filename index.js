@@ -252,12 +252,14 @@ Use listOfNames to do the following:
 */
 
 function listOfNames(array){
-  let newArray = [];
-  for(let i = 0; i < array.length; i ++){
-    if(array[i])
-
-    }
+  let names = [];
+  for (let i = 0; i < array.length; i ++){
+    names.push (array[i].name);
   }
+  console.log(names)
+  return names;
+}
+console.log(artists);
 
 
     
