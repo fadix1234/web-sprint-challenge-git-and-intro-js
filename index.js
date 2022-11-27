@@ -324,13 +324,16 @@ Use lotsOfArt to do the following:
 */
 
 function lotsOfArt(array){
+  let outPut = [];
   for(let i = 0; i < array.length; i ++){
-    if(paintings === array[i].paintings)
-    return (array[i].name);
-    
+    if(array[i].paintings >= 100){
+    outPut.push(array[i].name)
+    }
   }
-}
- console.log(artists);
+    return outPut;
+  }
+
+ console.log(lotsOfArt(artists));
 
 
 
